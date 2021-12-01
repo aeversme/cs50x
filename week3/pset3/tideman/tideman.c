@@ -300,13 +300,14 @@ void lock_pairs(void)
 {
     for (int i = 0; i < pair_count; i++)
     {
-        if (! would_loop(pairs[i].winner, pairs[i].loser)) // should return a boolean
+        // Does this pair cause a loop?
+        if (! would_loop(pairs[i].winner, pairs[i].loser))
         {
-            // add the pair to locked
+            // No loop, so add the pair to locked
             locked[pairs[i].winner][pairs[i].loser] = true;
         }
 
-        // debugging printf statements
+        // Debugging printf statements
         // printf("Pair evaluated: %i, %i\n", pairs[i].winner, pairs[i].loser);
         // for (int j = 0; j < candidate_count; j++)
         // {
