@@ -1,6 +1,6 @@
 <h1>CS50x</h1>
 
-This repository is for code I wrote for Harvard's CS50x online course.
+This repository is for code I wrote for Harvard's CS50x online course, as well as notes taken during lectures (parallel coding + my comments) for future reference.
 
 <i>Submissions:</i>
 
